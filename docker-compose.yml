@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+  master:
+    container_name: 'citus_master'
+    image: 'citusdata/citus:latest'
+    ports: ['5432:5432']
+    labels: ['com.citusdata.role=Master']
+  worker:
+    image: 'citusdata/citus:latest'
+    labels: ['com.citusdata.role=Worker']
+  config:
+    container_name: 'citus_config'
+    image: 'citusdata/workerlist-gen:latest'
+    volumes: ['/var/run/docker.sock:/tmp/docker.sock']
+    volumes_from: ['master']
