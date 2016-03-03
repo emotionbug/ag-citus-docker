@@ -1,4 +1,4 @@
-FROM postgres:9.5
+FROM postgres:9.5.1
 MAINTAINER Citus Data https://citusdata.com
 
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates wget \
