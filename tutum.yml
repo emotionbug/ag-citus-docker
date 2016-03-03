@@ -1,15 +1,15 @@
 master:
-  image: 'citusdata/citus:latest'
+  image: 'citusdata/citus:0.9.0'
   ports: ['5432:5432']
   tags: ['master']
   links: ['worker']
   deployment_strategy: every_node
 worker:
-  image: 'citusdata/citus:latest'
+  image: 'citusdata/citus:0.9.0'
   target_num_containers: 2
   tags: ['worker']
 config:
-  image: 'citusdata/dockercloud-workerlist-gen:latest'
+  image: 'citusdata/dockercloud-workerlist-gen:0.9.0'
   volumes: ['/var/run/docker.sock:/tmp/docker.sock']
   volumes_from: ['master']
   roles: ['global']
