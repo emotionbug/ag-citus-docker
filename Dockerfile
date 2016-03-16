@@ -3,7 +3,7 @@ MAINTAINER Citus Data https://citusdata.com
 
 # install Citus
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates wget \
-	&& wget -O /tmp/citus.deb -SL 'https://s3.amazonaws.com/packages.citusdata.com/debian/jessie/postgresql-9.5-citus_5.0.0~rc.3-1_amd64.deb' \
+	&& wget -O /tmp/citus.deb -SL 'https://s3.amazonaws.com/packages.citusdata.com/debian/jessie/postgresql-9.5-citus_5.0.0-1_amd64.deb' \
     && dpkg --install /tmp/citus.deb \
     && rm /tmp/citus*.deb \
     && apt-get purge -y --auto-remove ca-certificates wget \
