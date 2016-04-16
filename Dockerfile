@@ -1,12 +1,11 @@
-FROM postgres:9.5.1
+FROM postgres:9.5.2
 MAINTAINER Citus Data https://citusdata.com
 
+ENV CITUS_VERSION 5.0.1-1.pgdg80+1
+
 # install Citus
-RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates wget \
-	&& wget -O /tmp/citus.deb -SL 'https://s3.amazonaws.com/packages.citusdata.com/debian/jessie/postgresql-9.5-citus_5.0.0-1_amd64.deb' \
-    && dpkg --install /tmp/citus.deb \
-    && rm /tmp/citus*.deb \
-    && apt-get purge -y --auto-remove ca-certificates wget \
+RUN apt-get update \
+    && apt-get install -y postgresql-$PG_MAJOR-citus=$CITUS_VERSION \
     && rm -rf /var/lib/apt/lists/*
 
 # add citus to default PostgreSQL config
