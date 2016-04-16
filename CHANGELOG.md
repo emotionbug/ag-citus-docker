@@ -1,3 +1,9 @@
+### citus-docker v5.0.1 (March 24, 2016) ###
+
+* Install package from PGDG!
+
+* Based on latest PostgreSQL 9.5.2 image and official Citus 5.0.1 package
+
 ### citus-docker v5.0.0 (March 24, 2016) ###
 
 * Initial public release
