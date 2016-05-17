@@ -1,3 +1,9 @@
+### citus-docker v5.1.0 (May 17, 2016) ###
+
+* Bump Citus version to 5.1.0; brings COPY, EXPLAIN, and more performance
+
+* Based on latest PostgreSQL 9.5.3 image and official Citus 5.1.0 package
+
 ### citus-docker v5.0.1 (March 24, 2016) ###
 
 * Install package from PGDG!
