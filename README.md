@@ -28,6 +28,10 @@ If you’re using `docker-machine`, you might want to run `docker-machine ip` to
 
 As with the PostgreSQL image, the default `PGDATA` directory will be mounted as a volume, so it will persist between restarts of the container. But while the above _will_ get you a running Citus instance, it won’t have any workers to exercise distributed query planning. For that, you may wish to try the included [`docker-compose.yml`][compose-config] configuration.
 
+#### Nightly Image
+
+In addition to the `latest` (release) tag and the major-, minor-, and patch-specific tags, the `Dockerfile` in the `nightly` directory builds a tagged image with the latest Citus nightly (from the Citus `master` branch).
+
 ### Docker Compose
 
 The included `docker-compose.yml` file provides an easy way to get started with a Citus cluster, complete with multiple workers. Just copy it to your current directory and run:
