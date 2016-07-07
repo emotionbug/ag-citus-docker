@@ -1,3 +1,11 @@
+### citus-docker v5.1.1 (July 7, 2016) ###
+
+* This image now uses repos.citusdata.com (offical Citus package repo)
+
+* Bump Citus version to 5.1.1; improves task tracker and count distinct
+
+* Based on latest PostgreSQL 9.5.3 image and official Citus 5.1.1 package
+
 ### citus-docker v5.1.0 (May 17, 2016) ###
 
 * Bump Citus version to 5.1.0; brings COPY, EXPLAIN, and more performance
