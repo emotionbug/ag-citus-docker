@@ -1,3 +1,9 @@
+### citus-docker v5.2.0 (August 17, 2016) ###
+
+* Bump Citus version to 5.2.0; brings schemas, SERIAL, RETURNING, transactions
+
+* Based on latest PostgreSQL 9.5.4 image and official Citus 5.2.0 package
+
 ### citus-docker v5.1.1 (July 7, 2016) ###
 
 * This image now uses repos.citusdata.com (offical Citus package repo)
