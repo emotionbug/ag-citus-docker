@@ -3,11 +3,11 @@ version: '2'
 services:
   master:
     container_name: 'citus_master'
-    image: 'citusdata/citus:5.1.1'
+    image: 'citusdata/citus:5.2.0'
     ports: ['5432:5432']
     labels: ['com.citusdata.role=Master']
   worker:
-    image: 'citusdata/citus:5.1.1'
+    image: 'citusdata/citus:5.2.0'
     labels: ['com.citusdata.role=Worker']
   config:
     container_name: 'citus_config'
