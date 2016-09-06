@@ -1,3 +1,9 @@
+### citus-docker v5.2.1 (September 6, 2016) ###
+
+* Bump Citus version to 5.2.1; fixes a subquery bug
+
+* Based on latest PostgreSQL 9.5.4 image and official Citus 5.2.1 package
+
 ### citus-docker v5.2.0 (August 17, 2016) ###
 
 * Bump Citus version to 5.2.0; brings schemas, SERIAL, RETURNING, transactions
