@@ -1,3 +1,9 @@
+### citus-docker v5.2.1-1.docker (September 16, 2016) ###
+
+* Preserves ca-certificates package in images to avoid breaking apt-get
+
+* Ensures removal of community GPG key in nightly image build
+
 ### citus-docker v5.2.1 (September 6, 2016) ###
 
 * Bump Citus version to 5.2.1; fixes a subquery bug
