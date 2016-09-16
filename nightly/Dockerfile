@@ -9,5 +9,5 @@ RUN rm -rf /etc/apt/sources.list.d/citusdata_community.list \
        curl \
     && curl -s https://install.citusdata.com/community-nightlies/deb.sh | bash \
     && apt-get install --only-upgrade -y postgresql-$PG_MAJOR-citus \
-    && apt-get purge -y --auto-remove ca-certificates curl \
+    && apt-get purge -y --auto-remove curl \
     && rm -rf /var/lib/apt/lists/*

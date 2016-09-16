@@ -10,7 +10,7 @@ RUN apt-get update \
        curl \
     && curl -s https://install.citusdata.com/community/deb.sh | bash \
     && apt-get install -y postgresql-$PG_MAJOR-citus=$CITUS_VERSION \
-    && apt-get purge -y --auto-remove ca-certificates curl \
+    && apt-get purge -y --auto-remove curl \
     && rm -rf /var/lib/apt/lists/*
 
 # add citus to default PostgreSQL config
