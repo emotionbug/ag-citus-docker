@@ -2,7 +2,8 @@ FROM citusdata/citus:latest
 MAINTAINER Citus Data https://citusdata.com
 
 # switch to Citus nightly
-RUN rm -rf /etc/apt/sources.list.d/citusdata_community.list \
+RUN apt-key del 1530DF18 \
+    && rm -rf /etc/apt/sources.list.d/citusdata_community.list \
     && apt-get update \
     && apt-get install -y --no-install-recommends \
        ca-certificates \
