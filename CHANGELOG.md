@@ -1,3 +1,9 @@
+### citus-docker v5.2.2 (November 8, 2016) ###
+
+* Bump Citus version to 5.2.2
+
+* Based on latest PostgreSQL 9.5.5 image and official Citus 5.2.2 package
+
 ### citus-docker v5.2.1-1.docker (September 16, 2016) ###
 
 * Preserves ca-certificates package in images to avoid breaking apt-get
