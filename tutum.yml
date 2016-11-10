@@ -9,7 +9,7 @@ worker:
   target_num_containers: 2
   tags: ['worker']
 config:
-  image: 'citusdata/dockercloud-workerlist-gen:0.9.0'
+  image: 'citusdata/dockercloud-workerlist-gen:1.0.0'
   volumes: ['/var/run/docker.sock:/tmp/docker.sock']
   volumes_from: ['master']
   roles: ['global']

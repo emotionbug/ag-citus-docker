@@ -84,7 +84,7 @@ SELECT master_get_active_worker_nodes();
 -- (5 rows)
 ```
 
-If you inspect the configuration file, you’ll find that there is a container that is neither a master nor worker node: `citus_config`. It simply listens for new containers tagged with the worker role, then adds them to the config file in a volume shared with the master node. If nodes have been added or removed, it sends a `SIGHUP` signal to the master to reload the config. See Citus’ [`workerlist-gen`][workerlist-gen] repo for more details.
+If you inspect the configuration file, you’ll find that there is a container that is neither a master nor worker node: `citus_config`. It simply listens for new containers tagged with the worker role, then adds them to the config file in a volume shared with the master node. If new nodes have appeared, it calls `master_initialize_node_metadata` against the master to repopulate the node table. See Citus’ [`workerlist-gen`][workerlist-gen] repo for more details.
 
 You can stop your cluster with `docker-compose -p citus down`.
 
