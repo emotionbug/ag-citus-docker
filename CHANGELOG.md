@@ -1,3 +1,7 @@
+### citus-docker v6.0.1 (December 1, 2016) ###
+
+* Bump Citus version to 6.0.1
+
 ### citus-docker v6.0.0 (November 9, 2016) ###
 
 * Bump Citus version to 6.0.0
