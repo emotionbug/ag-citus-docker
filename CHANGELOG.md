@@ -1,3 +1,11 @@
+### citus-docker v6.1.0 (February 10, 2017) ###
+
+* Bump Citus version to 6.1.0
+
+* Based on latest PostgreSQL 9.6.2 image and official Citus 6.1.0 package
+
+* Fixes to address breakage from recent postgres image changes
+
 ### citus-docker v6.0.1 (December 1, 2016) ###
 
 * Bump Citus version to 6.0.1
