@@ -9,6 +9,6 @@ RUN apt-key del 1530DF18 \
        ca-certificates \
        curl \
     && curl -s https://install.citusdata.com/community-nightlies/deb.sh | bash \
-    && apt-get install --only-upgrade -y postgresql-$PG_MAJOR-citus \
+    && apt-get install -y postgresql-$PG_MAJOR-citus \
     && apt-get purge -y --auto-remove curl \
     && rm -rf /var/lib/apt/lists/*
