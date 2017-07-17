@@ -1,7 +1,7 @@
 FROM postgres:9.6.3
 MAINTAINER Citus Data https://citusdata.com
 
-ENV CITUS_VERSION 6.2.2.citus-1
+ENV CITUS_VERSION 6.2.3.citus-1
 
 # install Citus
 RUN apt-get update \
