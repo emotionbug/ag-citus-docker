@@ -1,6 +1,6 @@
 # Citus
 
-[![Image Size](https://img.shields.io/imagelayers/image-size/citusdata/citus/latest.svg)][image size]
+[![Image Size](https://images.microbadger.com/badges/image/citusdata/citus.svg)][image size]
 [![Release](https://img.shields.io/github/release/citusdata/docker.svg)][release]
 [![License](https://img.shields.io/github/license/citusdata/docker.svg)][license]
 
@@ -129,7 +129,7 @@ Licensed under the Apache License, Version 2.0 (the “License”); you may not 
 
 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an “AS IS” BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 
-[image size]: https://imagelayers.io/?images=citusdata%2Fcitus:latest
+[image size]: https://microbadger.com/images/citusdata/citus
 [release]: https://github.com/citusdata/docker/releases/latest
 [license]: LICENSE
 [citus data]: https://www.citusdata.com
