@@ -1,3 +1,7 @@
+### citus-docker v7.1.0 (November 15, 2017) ###
+
+* Bump Citus version to 7.1.0
+
 ### citus-docker v7.0.3 (October 18, 2017) ###
 
 * Bump Citus version to 7.0.3
