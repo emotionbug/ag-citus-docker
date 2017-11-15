@@ -1,5 +1,5 @@
-FROM postgres:9.6.5-alpine
-ARG VERSION=7.0.2
+FROM postgres:10.1-alpine
+ARG VERSION=7.1.0
 LABEL maintainer="Citus Data https://citusdata.com" \
       org.label-schema.name="Citus" \
       org.label-schema.description="Scalable PostgreSQL for multi-tenant and real-time workloads" \
@@ -13,7 +13,9 @@ RUN apk add --no-cache \
             --virtual builddeps \
         build-base \
         curl \
+        curl-dev \
         openssl-dev && \
+    apk add --no-cache libcurl && \
     curl -sfLO "https://github.com/citusdata/citus/archive/v${VERSION}.tar.gz" && \
     tar xzf "v${VERSION}.tar.gz" && \
     cd "citus-${VERSION}" && \
