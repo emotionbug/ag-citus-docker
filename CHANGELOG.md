@@ -1,3 +1,9 @@
+### citus-docker v7.4.0-2.docker (Jun 1, 2018) ###
+
+* Add postgresql-topn to docker image
+
+* Bump Citus version to 7.4.0-2
+
 ### citus-docker v7.4.0-1.docker (Jun 1, 2018) ###
 
 * Add postgresql-hll to docker image
