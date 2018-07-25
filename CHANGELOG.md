@@ -1,3 +1,9 @@
+### citus-docker v7.5.0.docker (July 25, 2018) ###
+
+* Bump Citus version to 7.5.0
+
+* Bump PostgreSQL version to 10.4
+
 ### citus-docker v7.4.1.docker (June 20, 2018) ###
 
 * Bump Citus version to 7.4.1
