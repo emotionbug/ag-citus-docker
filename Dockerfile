@@ -1,5 +1,5 @@
-FROM postgres:10.4
-ARG VERSION=7.5.1
+FROM postgres:11
+ARG VERSION=8.0.0
 LABEL maintainer="Citus Data https://citusdata.com" \
       org.label-schema.name="Citus" \
       org.label-schema.description="Scalable PostgreSQL for multi-tenant and real-time workloads" \
@@ -17,9 +17,9 @@ RUN apt-get update \
        ca-certificates \
        curl \
     && curl -s https://install.citusdata.com/community/deb.sh | bash \
-    && apt-get install -y postgresql-$PG_MAJOR-citus-7.5=$CITUS_VERSION \
-                          postgresql-$PG_MAJOR-hll=2.10.2.citus-1 \
-                          postgresql-$PG_MAJOR-topn=2.0.2 \
+    && apt-get install -y postgresql-$PG_MAJOR-citus-8.0=$CITUS_VERSION \
+                          postgresql-$PG_MAJOR-hll=2.12.citus-1 \
+                          postgresql-$PG_MAJOR-topn=2.2.0 \
     && apt-get purge -y --auto-remove curl \
     && rm -rf /var/lib/apt/lists/*
 
