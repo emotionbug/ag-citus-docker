@@ -1,3 +1,9 @@
+### citus-docker v8.0.0-1.docker (November 05, 2018) ###
+
+* Bump Citus version to 8.0.0-1
+
+* Update postgresql-hll packages
+
 ### citus-docker v8.0.0.docker (November 02, 2018) ###
 
 * Bump Citus version to 8.0.0
