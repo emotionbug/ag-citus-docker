@@ -1,5 +1,5 @@
 FROM postgres:11
-ARG VERSION=8.0.0-1
+ARG VERSION=8.0.2
 LABEL maintainer="Citus Data https://citusdata.com" \
       org.label-schema.name="Citus" \
       org.label-schema.description="Scalable PostgreSQL for multi-tenant and real-time workloads" \
@@ -9,11 +9,7 @@ LABEL maintainer="Citus Data https://citusdata.com" \
       org.label-schema.version=${VERSION} \
       org.label-schema.schema-version="1.0"
 
-# we released 8.0.0-1 version for docker image to update postgresql-hll
-# however, citus itself does not have 8.0.0-1 version so we are
-# hardcoding version number here. In the future we should change
-# hardcoded part to use $VERSION instead
-ENV CITUS_VERSION 8.0.0.citus-1
+ENV CITUS_VERSION ${VERSION}.citus-1
 
 # install Citus
 RUN apt-get update \
