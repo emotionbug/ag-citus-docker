@@ -2,10 +2,6 @@
 
 * Bump Citus version to 9.0.1
 
-### citus-docker v.0.1.docker (November 7, 2019) ###
-
-* Bump Citus version to .0.1
-
 ### citus-docker v8.3.2.docker (August 9, 2019) ###
 
 * Bump Citus version to 8.3.2
