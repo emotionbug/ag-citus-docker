@@ -16,6 +16,8 @@ RUN apk add --no-cache \
         curl-dev \
         openssl-dev \
         ca-certificates \
+        clang \
+        llvm \
         icu-dev && \
     apk add --no-cache libcurl && \
     curl -sfLO "https://github.com/citusdata/citus/archive/v${VERSION}.tar.gz" && \
