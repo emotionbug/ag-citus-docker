@@ -1,3 +1,7 @@
+### citus-docker v9.2.4-2.docker (March 31, 2020) ###
+
+* Add Docker Compose V3 support
+
 ### citus-docker v9.2.4.docker (March 31, 2020) ###
 
 * Bump Citus version to 9.2.4

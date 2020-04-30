@@ -19,7 +19,7 @@ services:
     environment: *AUTH
   manager:
     container_name: "${COMPOSE_PROJECT_NAME:-citus}_manager"
-    image: 'citusdata/membership-manager:0.2.1'
+    image: 'citusdata/membership-manager:latest'
     volumes: ['/var/run/docker.sock:/var/run/docker.sock']
     depends_on: { master: { condition: service_healthy } }
     environment: *AUTH
