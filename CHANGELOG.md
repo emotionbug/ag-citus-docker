@@ -2,7 +2,7 @@
 
 * Bump Citus version to 9.4.0
 
-* Bump PostgreSQL version to 
+* Bump PostgreSQL version to 12.3
 
 ### citus-docker v9.3.5.docker (July 27, 2020) ###
 
