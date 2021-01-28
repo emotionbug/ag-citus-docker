@@ -1,3 +1,7 @@
+### citus-docker v9.5.2.docker (January 27, 2021) ###
+
+* Bump Citus version to 9.5.2
+
 ### citus-docker v9.5.1.docker (December 3, 2020) ###
 
 * Bump Citus version to 9.5.1
