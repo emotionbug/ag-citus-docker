@@ -1,6 +1,7 @@
 ### citus-docker v10.0.2.docker (March 4, 2021) ###
 
 * Bump Citus version to 10.0.2
+* Bump PostgreSQL version to 13.2
 
 ### citus-docker v9.5.2.docker (January 27, 2021) ###
 
