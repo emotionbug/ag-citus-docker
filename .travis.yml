@@ -15,10 +15,10 @@ jobs:
       script: docker build -f Dockerfile .
     - stage: build-image
       name: "postgres-12"
-      script: docker build -f citus_pg_12.dockerfile .
+      script: docker build -f postgres-12/Dockerfile .
     - stage: build-image
       name: "alpine"
-      script: docker build -f Dockerfile-alpine .
+      script: docker build -f alpine/Dockerfile .
     - stage: build-image
       name: "nightly"
       script: docker build -f nightly/Dockerfile .
